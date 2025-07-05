@@ -1,0 +1,11 @@
+const express = require("express");
+const router = express.Router();
+
+const {movimentacaoController} = require('../controllers/movimentacaoController');
+router.get("/", movimentacaoController.listarMovimentacao);
+
+router.post("/", movimentacaoController.cadastrarMovimentacao);
+
+router.put("/:ID_Produto", movimentacaoController.AtualizarMovimentacao);
+
+router.delete("/:ID_produto", movimentacaoController.deletarMovimentacao);

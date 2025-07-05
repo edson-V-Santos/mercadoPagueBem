@@ -1,0 +1,12 @@
+const express = require("express");
+const router = express.Router(); // Instancia o router, um objeto do Express usado para definir rotas de forma modular e organizada.
+
+const {clientesController} = require('../controllers/clientesController');
+
+// Rotas de Alunos
+router.get("/", clientesController.listarClientes); // Rota responsável por listar os alunos do sistema.
+
+router.post("/", clientesController.cadastrarClientes); // Rota responsável por cadastrar um novo aluno.
+
+router.put("/:ID_Clientes", alunoController.atualizarCliente); // Rota responsável por atualizar os dados de um aluno.
+router.delete("/:ID_Clientes", clientesController.deletarClientes);

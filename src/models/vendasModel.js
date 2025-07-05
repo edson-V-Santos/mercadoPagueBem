@@ -13,12 +13,12 @@ const vendasModel = sequelize.define('Vendas',{
         type: DataTypes.STRING,
         allowNull: false
     },
-    valorTotal: {
-        type: DataTypes.DECIMAL(10,2),
-        allowNull: false
-    },
     dataCompra: {
         type: DataTypes.DATEONLY,
+        allowNull: false
+    },
+    valorTotal: {
+        type: DataTypes.DECIMAL(10,2),
         allowNull: false
     },
     idFuncionarioVenda:{
