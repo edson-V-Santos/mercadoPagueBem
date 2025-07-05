@@ -9,7 +9,7 @@ const vendasProdutosModel = sequelize.define('VendasProdutos', {
         primaryKey: true,
         references: {
             model: produtosModel,
-            key: 'ID_Produto',
+            key: 'ID_ProdutoVP',
         },
         allowNull: false
     },
@@ -18,7 +18,7 @@ const vendasProdutosModel = sequelize.define('VendasProdutos', {
         primaryKey: true,
         references: {
             model: vendasModel,
-            key: 'ID_Venda',
+            key: 'ID_VendaVP',
         },
         allowNull: false
     }
