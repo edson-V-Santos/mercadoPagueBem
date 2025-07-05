@@ -85,7 +85,6 @@ const vendasController = {
 
             venda = await vendasModel.findByPk(ID_Venda);
 
-            venda.dataCompra = parseDateBd(venda.dataCompra);
 
             return res.status(200).json({ message: "Venda atualizado com sucesso:", Venda: venda });
 

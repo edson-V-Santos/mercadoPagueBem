@@ -3,6 +3,7 @@ const express = require("express");
 // IMPORTAÇÃO DE ROTAS
 
 const {rotasVendas} = require('./src/rotas/rotasVendas');
+const {rotasProdutos} = require('./src/rotas/rotasProdutos');
 
 // APP
 
@@ -13,6 +14,7 @@ const PORT = 8081; // Define a porta em que o servidor irá escutar as requisiç
 app.use(express.json()); // Configura o body-parser para interpretar corpos de requisição no formato JSON.
 
 app.use("/vendas", rotasVendas);
+app.use("/produtos", rotasProdutos);
 
 app.listen(PORT, ()=>{
     console.log(`Servidor rodando na porta ${PORT}`);

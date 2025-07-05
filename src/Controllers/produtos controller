@@ -1,4 +1,0 @@
-const { vendasModel } = require('../models/vendasModel');
-const { vendasProdutosModel } = require('../models/vendasProdutosModel');
-const { produtosModel } = require('../models/produtosModel');
-const { Op } = require('sequelize');
