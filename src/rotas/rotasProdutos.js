@@ -9,6 +9,6 @@ router.post("/", produtosController.cadastrarProduto);
 
 router.put("/:ID_Produto", produtosController.atualizarProduto);
 
-router.delete("/:ID_produto", produtosController.deletarProduto );
+router.delete("/:ID_Produto", produtosController.deletarProduto );
 
 module.exports = {rotasProdutos: router};
