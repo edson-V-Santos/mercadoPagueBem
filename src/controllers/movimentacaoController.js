@@ -3,7 +3,7 @@ const { produtosModel } = require("../models/produtosModel");
 const { Op } = require("sequelize");
 
 const movimentacaoController = {
-    listarMovimentacaos: async (req, res) => {
+    listarMovimentacoes: async (req, res) => {
         try {
 
             let movimentacao = await movimentacaoModel.findAll({
